@@ -1,0 +1,97 @@
+.contenedor{
+    padding: 30px;
+    margin: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-wrap: break-word; /* Por si hay textos muy largos */
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor-lista{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px; 
+}
+
+.contenedor-lista li{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.contenedor-tarea{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    width: 100%;
+}
+
+.contenedor-tarea span{
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    flex: 1;
+}
+
+
+input[type="checkbox"]{
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+
+.tarea-completada{
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+
+
+
+.contenedor-formulario{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+input,select{
+    display: flex;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label{
+    padding: 10px;
+}
+
+.contenedor-boton{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.contenedor-tiempo{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 20px;
+}

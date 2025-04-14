@@ -1,0 +1,39 @@
+<div class="contenedor">
+    <div>
+        <h1> Lista de Tareas</h1>
+    </div>
+    <div class="contenedor-lista" *ngIf=" listaTareas.length > 0 ">
+        <ul>
+            <li *ngFor="let list of listaTareas" >
+              <div class="contenedor-tarea">
+                <input type="checkbox" [(ngModel)]="list.completado">
+                <span [ngClass]="{ 'tarea-completada': list.completado }" >[{{ list.taskPrioridad }}] - {{ list.taskNombre }} - {{ list.taskTiempo }} min</span>
+              </div>
+            </li>
+          </ul>
+    </div>
+    <div class="contenedor-tiempo">
+        <label for="lblTotalTiempo">Total Tiempo:</label>
+        <span > {{totalMinutos}}</span>
+    </div>
+    <div class="contenedor-formulario">
+        <div>
+            <label for="">Nombre: </label>
+            <input type="text" [(ngModel)]="nombre">
+        </div>
+        <div>
+            <label for="">Prioridad: </label>
+            <select name="" id="" [(ngModel)]="prioridadSeleccionada">
+                <option selected disabled> Seleccione: </option>
+                <option *ngFor="let priority of prioridades"> {{ priority }}</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Tiempo estimado: </label>
+            <input type="number" [(ngModel)]="tiempoEstimado">
+        </div>
+        <div class="contenedor-boton">
+            <button (click)="AgregarTareas()"> Agregar Tarea</button>
+        </div>
+    </div>
+</div>
